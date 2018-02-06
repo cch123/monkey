@@ -41,11 +41,21 @@ const (
 	// Keywords
 	FUNCTION = "function"
 	LET      = "let"
+	IF       = "if"
+	ELSE     = "else"
+	TRUE     = "true"
+	FALSE    = "false"
+	RETURN   = "return"
 )
 
 var keywords = map[string]TokenType{
-	"fn":  FUNCTION,
-	"let": LET,
+	"fn":     FUNCTION,
+	"let":    LET,
+	"if":     IF,
+	"else":   ELSE,
+	"true":   TRUE,
+	"false":  FALSE,
+	"return": RETURN,
 }
 
 // LookupIdent : find whether identifier is keyword
